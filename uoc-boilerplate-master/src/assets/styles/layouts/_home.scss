@@ -32,33 +32,33 @@
 \*------------------------------------*/
 * {
   box-sizing: border-box;
-  margin:  0;
+  margin: 0;
   padding: 0;
 }
 
 body {
-  display:        flex;
+  display: flex;
   flex-direction: column;
-  text-align:     justify;
-  height:  100vh;
-  margin:  0;
+  text-align: justify;
+  height: 100vh;
+  margin: 0;
   padding: 0;
-  font-family:  $font-family-sans-serif;
-  font-size:    16px;
-  line-height:  24px;
-  color:            $fosc;
-  background-color: $clar; 
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $fosc;
+  background-color: $clar;
 }
 
-main{
+main {
   padding: 2rem;
 }
 
-img{
+img {
   width: 15rem;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -70,20 +70,20 @@ a{
 \*------------------------------------*/
 
 .nav {
-  text-align:       center;
-  text-transform:   uppercase;
+  text-align: center;
+  text-transform: uppercase;
   background-color: $fosc;
-  color:            white;
+  color: white;
   padding-top: 2rem;
-  
+
   &__link {
-    color:  inherit;
+    color: inherit;
     border: none;
 
-    	&:hover {
-          border: none;
-          color:  $color-2;
-        }
+    &:hover {
+      border: none;
+      color: $color-2;
+    }
   }
 
   &__img {
@@ -92,16 +92,16 @@ a{
   }
 
   &__ul__li {
-    display:        flex;
+    display: flex;
     flex-direction: column;
-    font-size:    16px;
-    font-weight:  400;
+    font-size: 16px;
+    font-weight: 400;
     padding-left: 0;
 
-      &::before {
-        content: "";
-        width: 10px;
-      }
+    &::before {
+      content: "";
+      width: 10px;
+    }
   }
 
 }
@@ -109,26 +109,30 @@ a{
 /*------------------------------------*\
   #PRESENTACIO
 \*------------------------------------*/
-.presentacio{
-  display:        flex;
+.presentacio {
+  display: flex;
   flex-direction: column;
-  align-items:    center;
-  &__h1{
+  align-items: center;
+
+  &__h1 {
     text-align: center;
     padding-bottom: 1.5rem;
   }
-  &__h2{
+
+  &__h2 {
     text-align: center;
     padding-bottom: 1.5rem;
   }
-  &__p{
+
+  &__p {
     padding-bottom: 1.2rem;
   }
-  &__img{
-    width:  300px;
+
+  &__img {
+    width: 300px;
     height: 250px;
     margin-bottom: 4.2rem;
-  } 
+  }
 }
 
 
@@ -136,67 +140,68 @@ a{
   #BLOCS
 \*------------------------------------*/
 
-.blocs{
-  display:        flex;
+.blocs {
+  display: flex;
   flex-direction: column;
-  align-items:    center;
+  align-items: center;
 
   &__yoga {
     background-color: $color-3;
-    display:        flex;
+    display: flex;
     flex-direction: column;
-    align-items:    center;
-    padding-top:    2rem;
+    align-items: center;
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
-    margin-bottom:  3rem;
-    margin-top:     3rem;
-    box-shadow:     5px 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius:  25px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 10px rgba(0 0 0 / 50%);
+    border-radius: 25px;
 
-      &:hover{
-        background-color: darken($color-1, 3);
-        color: $clar;
-      }
+    &:hover {
+      background-color: darken($color-1, 3);
+      color: $clar;
+    }
   }
 
   &__yoga__h2 {
     margin-bottom: 1rem;
-    margin-top:    1rem;
+    margin-top: 1rem;
   }
 
   &__yoga__img {
-    width:  12rem;
-    height: 12rem; 
+    width: 12rem;
+    height: 12rem;
   }
 
   &__yoga__p {
     text-align: center;
-    margin:     1.5rem;
+    margin: 1.5rem;
   }
-  
+
 }
 
 
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
-.footer{
+.footer {
   background-color: $fosc;
-  color:            $clar;
+  color: $clar;
 
-  &__p{
-    padding:    3rem;
+  &__p {
+    padding: 3rem;
     text-align: center;
-    font-size:  1.5rem;
+    font-size: 1.5rem;
   }
 
-  &__icones{
-    display:          flex;
-    flex-direction:   row;
-    justify-content:  center;
-    padding-top: 3rem;      
+  &__icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
   }
-  &__icones__i{
+
+  &__icones__i {
     margin: 0.8rem;
   }
 }
@@ -205,11 +210,12 @@ a{
 /*------------------------------------------------------*\
   #MOBIL
 \*------------------------------------------------------*/
-@media (280px < width <= 768px){
+@media (280px < width <=768px) {
+
   /*---------------------------------*\
     #NAVEGADOR MOBIL
   \*---------------------------------*/
-  .nav{
+  .nav {
     &__ul__li {
       padding-bottom: 0.7rem;
     }
@@ -220,87 +226,95 @@ a{
 /*------------------------------------------------------*\
   #TABLET
 \*------------------------------------------------------*/
-@media (768px < width <= 1024px ) {
+@media (768px < width <=1024px) {
+
   /*---------------------------------*\
     #GENERAL TABLET
   \*---------------------------------*/
   p {
-    text-align:  justify;
-    font-size:   1.3rem;
+    text-align: justify;
+    font-size: 1.3rem;
     line-height: 1.9rem;
   }
+
   /*---------------------------------*\
     #NAVEGADOR TABLET
   \*---------------------------------*/
   .nav {
-    text-align:     center;
-    padding-top:    1rem;
+    text-align: center;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    
+
     &__ul {
       padding-left: 0;
     }
 
     &__ul__li {
-      display:     inline-block;
-      font-size:   1.5rem;
+      display: inline-block;
+      font-size: 1.5rem;
       font-weight: 400;
-  
+
       &::before {
         content: " | ";
         width: 10px;
       }
-  
+
       &:first-child::before {
         content: "";
       }
 
       &__link {
-        color:  inherit;
+        color: inherit;
         border: none;
       }
     }
   }
+
   /*---------------------------------*\
     #BLOCS TABLET
   \*---------------------------------*/
-  .blocs{
-    &__yoga{
+  .blocs {
+    &__yoga {
       display: grid;
       grid-template-columns: 1fr 1.2fr 2fr;
-      padding-top:    1.5rem;
-      padding-bottom: 1.5rem;   
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
     }
-    &__yoga__h2{
+
+    &__yoga__h2 {
       padding-left: 2rem;
     }
+
     &__yoga__p {
-      text-align:    justify;
+      text-align: justify;
       padding-right: 2rem;
     }
-}
+  }
+
   /*------------------------------------*\
   #PRESENTACIO TABLET
   \*------------------------------------*/
-  .presentacio{
-   
-    &__img{
-      width:  500px;
+  .presentacio {
+
+    &__img {
+      width: 500px;
       height: 450px;
       margin-bottom: 4.2rem;
     }
   }
-
 }
 
 
 /*------------------------------------------------------*\
   #DESKTOP
 \*------------------------------------------------------*/
-@media (width > 1024px){
+
+@media (width > 1024px) {
+
   /*---------------------------------*\
     #GENERAL DESKTOP
   \*---------------------------------*/
+
   p {
     text-align: justify;
   }
@@ -308,86 +322,89 @@ a{
   /*---------------------------------*\
     #NAVEGADOR DESKTOP
   \*---------------------------------*/
+
   .nav {
     text-align: right;
-    padding-right:  2.5rem;
-    padding-top:    1rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    
+
     &__link {
-      color:  inherit;
+      color: inherit;
       border: none;
     }
-  
+
     &__img {
       width: 100px;
       height: 80px;
     }
-  
+
     &__ul__li {
       display: inline-block;
-      font-size:    1.5rem;
-      font-weight:  400;
+      font-size: 1.5rem;
+      font-weight: 400;
       padding-left: 0;
-  
-        &::before {
-          content: " | ";
-          width: 10px;
-        }
 
-        &:first-child::before {
-          content:     "";
-        }
-    }  
+      &::before {
+        content: " | ";
+        width: 10px;
+      }
+
+      &:first-child::before {
+        content: "";
+      }
+    }
   }
- 
+
 
   /*---------------------------------*\
     #BLOCS DESKTOP
   \*---------------------------------*/
-  .blocs{
+  .blocs {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-  
-    &__yoga{
-      display:        flex;
+
+    &__yoga {
+      display: flex;
       flex-direction: column;
-      align-items:    center;
-      height:   700px;
-      width:    330px;
+      align-items: center;
+      height: 700px;
+      width: 330px;
       border-radius: 25px;
     }
   }
+
   /*------------------------------------*\
   #PRESENTACIO DESKTOP
   \*------------------------------------*/
-  .presentacio{
-    
-    &__h1{
+  .presentacio {
+
+    &__h1 {
       font-size: 5rem;
       padding-bottom: 4.2rem;
-      padding-top:    3.2rem;
-    }
-    &__h2{
-      font-size: 3rem;
-      padding-bottom: 4.2rem;
-      padding-top:    3.2rem;
+      padding-top: 3.2rem;
     }
 
-    &__p{
-      padding-bottom: 1.2rem;
-      padding-left:   13rem;
-      padding-right:  13rem;
-      font-size:   1.5rem;
-      line-height: 2.5rem;
-      
+    &__h2 {
+      font-size: 3rem;
+      padding-bottom: 4.2rem;
+      padding-top: 3.2rem;
     }
-    &__img{
-      width:  600px;
+
+    &__p {
+      padding-bottom: 1.2rem;
+      padding-left: 13rem;
+      padding-right: 13rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+
+    }
+
+    &__img {
+      width: 600px;
       height: 500px;
       margin-bottom: 4.2rem;
     }
   }
 }
-
